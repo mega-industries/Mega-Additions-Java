@@ -1,4 +1,4 @@
-package mega-adds;
+package mega_adds;
 
 import arc.*;
 import arc.util.*;
