@@ -16,7 +16,7 @@ public class SpikeBulletType extends BasicBulletType{
         hitSound = Sounds.spark;
         trailInterval = 0.4;
         lifetime = 52f;
-      trailRotation: true;
+      trailRotation = true;
       trailEffect = new Effect(30f, e -> {
                                Draw.color(fromColor, toColor, e.fin());
         Drawf.tri(e.x, e.y, width * e.fout(), height * e.fout(), e.rotation);
