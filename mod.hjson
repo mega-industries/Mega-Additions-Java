@@ -8,7 +8,7 @@ name: "mega-adds-java"
 author: "Mega Industries"
 
 #the fully qualified main class of the mod
-main: "mega-adds.MegaAdds"
+main: "mega_adds.MegaAdds"
 
 #the mod description as seen in the mod dialog
 description: "Mega Additions revised."
