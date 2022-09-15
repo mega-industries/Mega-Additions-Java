@@ -1,4 +1,4 @@
-package megaadds;
+package mega-adds;
 
 import arc.*;
 import arc.util.*;
@@ -11,7 +11,7 @@ import mindustry.ui.dialogs.*;
 
 public class MegaAdds extends Mod{
 
-    public ExampleJavaMod(){
+    public MegaAdds(){
         Log.info("Loaded Mega Additions constructor.");
 
         //listen for game load event
