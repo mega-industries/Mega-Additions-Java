@@ -21,7 +21,7 @@ public class MegaAdds extends Mod{
                 BaseDialog dialog = new BaseDialog("frog");
                 dialog.cont.add("behold").row();
                 //mod sprites are prefixed with the mod name (this mod is called 'example-java-mod' in its config)
-                dialog.cont.image(Core.atlas.find("example-java-mod-frog")).pad(20f).row();
+                dialog.cont.image(Core.atlas.find("mega-adds-java-frog")).pad(20f).row();
                 dialog.cont.button("I have gazed upon the being of wisdom", dialog::hide).size(100f, 50f);
                 dialog.show();
             });
