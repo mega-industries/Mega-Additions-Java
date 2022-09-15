@@ -21,20 +21,20 @@ public class SpikeBulletType extends BasicBulletType{
                                Draw.color(fromColor, toColor, e.fin());
         Drawf.tri(e.x, e.y, width * e.fout(), height * e.fout(), e.rotation);
     }),
-    }
+    };
   
   @Override
     public void draw(Bullet b){
         if(b.data instanceof Position data){
             Drawf.tri(b.x, b.y, width, height, b.rotation)
         }
-    }
+    };
 
     public SpikeBulletType(float speed, float damage){
         this(speed, damage, "bullet");
-    }
+    };
 
     public SpikeBulletType(){
         this(1f, 1f, "bullet");
-    }
+    };
 }
