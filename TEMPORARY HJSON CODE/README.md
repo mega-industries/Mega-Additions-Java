@@ -1,0 +1,2 @@
+- This folder is for people who want to contribute, but do not know how to code in JavaScript.
+- You can add a HJSON file in this folder and we will try to implement it as soon as possible.
