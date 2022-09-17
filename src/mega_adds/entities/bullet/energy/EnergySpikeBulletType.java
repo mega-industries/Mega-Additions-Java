@@ -1,4 +1,4 @@
-package mega_adds.entities.bullet;
+package mega_adds.entities.bullet.energy;
 
 import mindustry.gen.*;
 import mindustry.graphics.*;
@@ -6,14 +6,14 @@ import arc.graphics.*;
 import mindustry.entities.bullet.*;
 import mindustry.content.*;
 
-public class SpikeBulletType extends BasicBulletType {
+public class EnergySpikeBulletType extends BasicBulletType {
     public Color fromColor = Color.white.cpy();
     public Color toColor = Color.valueOf("f3e979");
     public static final Effect defaultFx = new Effect(30f, e -> {
         Draw.color(fromColor, toColor, e.fin());
         Drawf.tri(e.x, e.y, width * e.fout(), height * e.fout(), e.rotation);
     });
-    public SpikeBulletType(float speed, float damage, Color color) {
+    public EnergySpikeBulletType(float speed, float damage, Color color) {
         super(speed, damage, bulletSprite);
         homingPower = 0.08f;
         shrinkY = 0;
@@ -26,11 +26,11 @@ public class SpikeBulletType extends BasicBulletType {
         trailEffect = defaultFx;
     }
     
-    public SpikeBulletType(float speed, float damage) {
+    public EnergySpikeBulletType(float speed, float damage) {
         this(speed, damage, "bullet");
     }
 
-    public SpikeBulletType() {
+    public EnergySpikeBulletType() {
         this(1f, 1f, "bullet");
     }
     
