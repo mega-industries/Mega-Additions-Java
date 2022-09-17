@@ -2,6 +2,9 @@ package mega_adds.entities.bullet;
 
 import mindustry.gen.*;
 import mindustry.graphics.*;
+import arc.graphics.*;
+import mindustry.entities.bullet.*;
+import mindustry.content.*;
 
 public class SpikeBulletType extends BasicBulletType {
     public Color fromColor = Color.white.cpy();
