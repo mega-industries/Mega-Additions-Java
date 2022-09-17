@@ -1,4 +1,4 @@
-# Mindustry Java Mod Template
+![icon](assets/icon.png)
 A Java Mindustry mod template that works on Android and PC. The Kotlin version of this mod can be seen [here](https://github.com/Anuken/MindustryKotlinModTemplate).
 
 ## Building for Desktop Testing
