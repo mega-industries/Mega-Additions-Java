@@ -6,7 +6,7 @@ import mindustry.graphics.*;
 public class SpikeBulletType extends BasicBulletType {
     public Color fromColor = Color.white.cpy();
     public Color toColor = Color.valueOf("f3e979");
-    public static final Effect default = new Effect(30f, e -> {
+    public static final Effect defaultFx = new Effect(30f, e -> {
         Draw.color(fromColor, toColor, e.fin());
         Drawf.tri(e.x, e.y, width * e.fout(), height * e.fout(), e.rotation);
     });
@@ -20,7 +20,7 @@ public class SpikeBulletType extends BasicBulletType {
         trailInterval = 0.4f;
         lifetime = 52;
         trailRotation = true;
-        trailEffect = default;
+        trailEffect = defaultFx;
     }
     
     public SpikeBulletType(float speed, float damage) {
