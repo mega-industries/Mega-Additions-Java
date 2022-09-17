@@ -17,24 +17,24 @@ public class SpikeBulletType extends BasicBulletType {
         trailInterval = 0.4f;
         lifetime = 52;
         trailRotation = true;
-        trailEffect = new Effect(30f, e - > {
+        trailEffect = new Effect(30f, e -> {
             Draw.color(fromColor, toColor, e.fin());
             Drawf.tri(e.x, e.y, width * e.fout(), height * e.fout(), e.rotation);
         }),
-    };
+    }
+    
+    public SpikeBulletType(float speed, float damage) {
+        this(speed, damage, "bullet");
+    }
 
+    public SpikeBulletType() {
+        this(1f, 1f, "bullet");
+    }
+    
     @Override
     public void draw(Bullet b) {
         if (b.data instanceof Position data) {
             Drawf.tri(b.x, b.y, width, height, b.rotation);
         }
-    };
-
-    public SpikeBulletType(float speed, float damage) {
-        this(speed, damage, "bullet");
-    };
-
-    public SpikeBulletType() {
-        this(1f, 1f, "bullet");
-    };
+    }
 }
