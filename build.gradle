@@ -85,7 +85,7 @@ task buildMove(dependsOn: build){
 }
 
 tasks.withType(JavaCompile){
-    targetCompatibility = 8
+    targetCompatibility = 17
     sourceCompatibility = JavaVersion.VERSION_17
     options.encoding = "UTF-8"
     options.compilerArgs += ["-Xlint:deprecation"]
