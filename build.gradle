@@ -11,8 +11,8 @@ sourceSets {
     }
 }
 java {
-    targetCompatibility = 8
-    sourceCompatibility = 8
+    targetCompatibility = 17
+    sourceCompatibility = 17
 }
 repositories {
     mavenCentral()
@@ -35,14 +35,6 @@ mindustry {
     def name = project.archivesBaseName
     deploy {
         baseName = name
-}
-tasks.withType(JavaCompile){
-    targetCompatibility = 17
-    sourceCompatibility = JavaVersion.VERSION_17
-    options.encoding = "UTF-8"
-    options.compilerArgs += ["-Xlint:deprecation"]
-    if(JavaVersion.current() != JavaVersion.VERSION_1_8){
-        options.compilerArgs.addAll(['--release', '8'])
     }
 }
 mindustryAssets {
